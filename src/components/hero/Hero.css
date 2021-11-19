@@ -1,0 +1,19 @@
+.light-font {
+    font-weight: 300;
+}
+
+.bold-font {
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.bottom-line {
+    margin: 50px 0 0;
+    background-color: #fff;
+    height: 1px;
+    max-width: 50%;
+}

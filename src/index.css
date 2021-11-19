@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C400i%2C700%2C700i%7CMontserrat%3A300%2C400%2C600%2C700&ver=5.8.1");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: block;
+    background-color: #1795d4;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.container.align-center {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+}
+
+.container-column {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.container-column-3 {
+    width: 25%;
+    padding: 0 10px;
+}
+
+.container-column-6 {
+    width: 50%;
+    padding: 0 10px;
+    margin-left: 3em;
+}
+
+.container-column-2 {
+    width: 20%;
+    padding: 0 10px;
+}
+
+@media (min-width: 1201px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1050px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 980px;
+        margin: 0 auto;
+    }
+    .container-column-3 {
+        width: 25%;
+        padding: 0 10px;
+    }
+    .container-column-6 {
+        width: 50%;
+        padding: 0 10px;
+        margin-left: 3em;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em !important;
+    }
+    .bottom-line {
+        margin-bottom: 40px !important;
+    }
+    .container {
+        width: auto !important;
+    }
+    .container.align-center {
+        display: -ms-flexbox;
+        display: flex;
+        height: 80vh;
+        -ms-flex-align: center;
+        align-items: center;
+        flex-direction: row;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+    .container {
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .container-column-3 {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .container-column-6 {
+        width: 100%;
+        padding: 0 10px;
+        margin-left: 0em;
+    }
+    .calculator--container {
+        margin-bottom: 40px !important;
+    }
+}
+
+.padded {
+    padding: 10px;
+}

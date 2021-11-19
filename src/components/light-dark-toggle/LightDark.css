@@ -1,0 +1,45 @@
+.light-dark-container {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+    max-width: 100px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.light-dark-container>span {
+    width: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 10px;
+    z-index: 2;
+}
+
+.light-dark-container>span.active {
+    color: #fed801;
+}
+
+.light-dark-toggle {
+    position: absolute;
+    border-radius: 5px;
+    width: 50px;
+    background-color: #333;
+    height: 25px;
+    z-index: 1;
+    transition: all ease-in-out 0.3s;
+}
+
+.light-dark-toggle.light {
+    left: 0;
+    right: 50px;
+}
+
+.light-dark-toggle.dark {
+    right: 0;
+    left: 50px;
+}
